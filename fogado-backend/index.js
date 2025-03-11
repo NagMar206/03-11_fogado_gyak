@@ -1,20 +1,20 @@
 require("dotenv").config();                                                                     //Ha külön .env fájlban tárolnám az adatbázist, de ezt nem használnám. 
-const express = require('express');                                                             //Backend API, HTTP szerver és API végpontok
 const mysql = require("mysql2");                                                                //MySQL kapcsolódáshoz, adatbázis műveletek
-const cors = require=('cors');                                                                  //Frontend-Backend kommunikáció
 
 
 
-
-
-//Express alkalmazás létrehozás
+const express = require("express");
+const cors = require("cors");
 
 const app = express();
-const port = 5000;                                                                              //Az alkalmazás az 5000-es porton fog futni
+const port = 5000; // 🔹 Port megadása
 
+app.use(cors());
+app.use(express.json());
 
-
-
+app.listen(port, () => {
+  console.log(`Szerver fut a http://localhost:${port} címen`);
+});
 
 
 
@@ -113,8 +113,3 @@ app.get("/foglaltsag/:szobaId", (req, res) => {
 
 
 
-//Szerver indítása
-
-app.listen(port, () => {
-    console.log(`Szerver fut a http://localhost:${port} címen`);
-});

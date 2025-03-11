@@ -31,9 +31,13 @@ body{
   margin-bottom: 25px;
 }
 
+/* Háttér és szöveg kontrasztjának javítása */
 .bg-torzs {
-  background-color: #C5C599;
+  background-color: #f9f9f9; /* Világosabb háttér */
+  color: #222; /* Sötétebb szöveg, jobb olvashatóság */
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -63,4 +67,45 @@ a {
   filter: opacity(0.8); /* 80%-os átlátszóság */
   max-width: 150px;
   height: auto;
+}
+
+/* Táblázat formázása */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: #444;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+
+.fejlec {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.fejlec img {
+  width: 100%;
+  object-fit: cover;
 }
