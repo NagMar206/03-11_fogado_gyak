@@ -1,0 +1,16 @@
+# Node.js backend
+node_modules/
+.env
+package-lock.json
+
+# React frontend
+fogado-frontend/node_modules/
+fogado-frontend/build/
+fogado-frontend/.env
+
+# OS és IDE fájlok
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
