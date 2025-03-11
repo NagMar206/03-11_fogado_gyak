@@ -27,9 +27,15 @@ body{
   font-weight: bold;
 }
 
-.container{
-  margin-bottom: 25px;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #D9D7A9;
+  border-radius: 10px;
 }
+
+
 
 /* Háttér és szöveg kontrasztjának javítása */
 .bg-torzs {
@@ -64,48 +70,40 @@ a {
 }
 
 .logo {
-  filter: opacity(0.8); /* 80%-os átlátszóság */
-  max-width: 150px;
-  height: auto;
+  width: 80px; /* Kisebb méret */
+  margin-right: 20px; /* Ad egy kis távolságot a szövegtől */
+  float: left;
 }
 
-/* Táblázat formázása */
-.table {
+
+/* Táblázat formázás */
+table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
-  border-radius: 10px;
-  overflow: hidden;
+  background-color: white;
 }
 
-.table th {
-  background-color: #444;
-  color: white;
-  padding: 12px;
-  text-align: left;
+th, td {
+  border: 2px solid black;
+  padding: 8px;
+  text-align: center;
 }
 
-.table td {
-  border: 1px solid #ddd;
-  padding: 10px;
-}
-
-.table tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-.table tr:hover {
-  background-color: #ddd;
+th {
+  background-color: #C5C599;
+  font-weight: bold;
 }
 
 
-.fejlec {
+.fejlec-kep {
   width: 100%;
-  height: 350px;
-  overflow: hidden;
+  height: auto;
+  margin-bottom: -5px; /* Eltünteti a felesleges helyet a kép alatt */
 }
 
-.fejlec img {
+/* Képek méretezése */
+.szoba-kep {
   width: 100%;
-  object-fit: cover;
+  max-width: 400px;
+  border-radius: 5px;
 }
